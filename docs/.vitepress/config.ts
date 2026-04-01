@@ -4,6 +4,7 @@ export default defineConfig({
   title: 'Claude Code 深度解析',
   description: '从源码层面理解 Claude Code 的设计与实现',
 
+  base: '/claude-code-docs/',
   lang: 'zh-CN',
 
   themeConfig: {
