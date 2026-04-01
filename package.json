@@ -3,9 +3,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "node_modules/.bin/vitepress dev docs",
-    "build": "node_modules/.bin/vitepress build docs",
-    "serve": "node_modules/.bin/vitepress serve docs"
+    "dev": "node node_modules/vitepress/bin/vitepress.js dev docs",
+    "build": "node node_modules/vitepress/bin/vitepress.js build docs",
+    "serve": "node node_modules/vitepress/bin/vitepress.js serve docs"
   },
   "devDependencies": {
     "vitepress": "^1.6.4",
