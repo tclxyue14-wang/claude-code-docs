@@ -1,0 +1,70 @@
+/* 自定义样式 */
+
+:root {
+  --vp-c-brand-1: #D97706;
+  --vp-c-brand-2: #92400E;
+  --vp-c-brand-light: #F59E0B;
+  --vp-c-brand-lighter: #FBBF24;
+  --vp-c-brand-dark: #B45309;
+  --vp-c-brand-darker: #78350F;
+}
+
+/* 浅色主题下行内代码样式 */
+.vp-doc :not(pre) > code {
+  background-color: rgba(217, 119, 6, 0.1);
+  border-radius: 4px;
+  padding: 2px 6px;
+  color: #92400E;
+  font-weight: 500;
+}
+
+/* 深色主题下行内代码样式 */
+html.dark .vp-doc :not(pre) > code {
+  background-color: rgba(251, 191, 36, 0.15);
+  color: #FBBF24;
+}
+
+/* 首页 Hero */
+.VPHero .name {
+  background: linear-gradient(120deg, #D97706 0%, #92400E 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* 代码块 */
+.vp-code-group .tabs label {
+  font-weight: 500;
+}
+
+/* 表格 */
+.vp-doc table {
+  width: 100%;
+}
+
+.vp-doc th {
+  background-color: var(--vp-c-bg-soft);
+}
+
+/* 侧边栏 */
+.VPSidebarItem.level-0 > .item > .text {
+  font-weight: 600;
+}
+
+/* 目录 */
+.VPDocOutlineItem li {
+  margin: 0.25rem 0;
+}
+
+/* 自定义容器 */
+.custom-block {
+  margin: 1rem 0;
+}
+
+.custom-block.tip {
+  border-color: var(--vp-c-brand-1);
+}
+
+/* 代码高亮 */
+.vp-doc [class*='language-'] code {
+  font-size: 0.875rem;
+}
